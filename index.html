@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晚安咖啡居 | VRChat World Official Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 全局柔和夜系风格，贴合咖啡居月夜氛围 */
+        body {
+            background-color: #0f1420;
+            color: #e2e8f0;
+            background-image: radial-gradient(circle at 20% 30%, rgba(45, 55, 72, 0.4) 0%, transparent 40%);
+        }
+        .card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen px-4 py-8 md:px-16 lg:px-24">
+    <!-- 头部区域 -->
+    <header class="mb-10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div>
+            <h1 class="text-3xl md:text-4xl font-bold text-blue-200" data-cn>☕ 晚安咖啡居 | VRChat世界官网</h1>
+            <h1 class="text-3xl md:text-4xl font-bold text-blue-200 hidden" data-en>☕ Goodnight Café | VRChat World Official Site</h1>
+            <p class="text-slate-400 mt-2" data-cn>情绪避风港 · 安静治愈 · 私密陪伴</p>
+            <p class="text-slate-400 mt-2 hidden" data-en>Emotional Safe Haven · Cozy · Private Companion</p>
+        </div>
+        <!-- 中英切换按钮 -->
+        <div class="flex gap-2">
+            <button id="btnCn" class="px-4 py-2 rounded bg-blue-600 hover:bg-blue-700 transition">中文</button>
+            <button id="btnEn" class="px-4 py-2 rounded bg-slate-700 hover:bg-slate-600 transition">English</button>
+        </div>
+    </header>
+
+    <main class="space-y-8">
+        <!-- 1. 世界简介 -->
+        <section class="card p-6 rounded-xl">
+            <h2 class="text-xl font-semibold mb-4 text-blue-300" data-cn>🌌 世界简介</h2>
+            <h2 class="text-xl font-semibold mb-4 text-blue-300 hidden" data-en>🌌 World Introduction</h2>
+            
+            <div data-cn>
+                <p class="mb-3">晚安咖啡居是由作者 Wnt. Snwf.（真白 冬雪）打造的 VRChat 私密治愈空间，面向双相、焦虑、情绪敏感人群。</p>
+                <p class="mb-3">以月夜、大海、咖啡小屋为核心氛围，主打<strong>低压力独处、轻社交陪伴</strong>，可自由切换天空盒、调节BGM，提供躺卧、咖啡、零食、休闲游戏区等功能。</p>
+                <p>无需强行社交，在这里只需要放松自己，获得一句温柔的晚安。</p>
+                <p class="mt-3">VRChat页面：<a href="https://vrchat.com/home/world/wrld_a5b04cb4-27b3-49d5-9dbc-5ce3099aa235/info" class="text-blue-400 underline hover:text-blue-300" target="_blank">点击访问</a></p>
+            </div>
+            <div class="hidden" data-en>
+                <p class="mb-3">Goodnight Café is a private healing VRChat world created by Wnt. Snwf. (Mashiro Fuyuki), for people with bipolar disorder, anxiety and emotional sensitivity.</p>
+                <p class="mb-3">Centered on night moon, ocean and café house atmosphere, it focuses on <strong>low-pressure solitude & light social companionship</strong>. You can switch skyboxes, adjust BGM freely, with lounge, coffee, snacks and casual game areas available.</p>
+                <p>No forced social interaction. Just relax and receive a gentle goodnight here.</p>
+                <p class="mt-3">VRChat Page: <a href="https://vrchat.com/home/world/wrld_a5b04cb4-27b3-49d5-9dbc-5ce3099aa235/info" class="text-blue-400 underline hover:text-blue-300" target="_blank">Click to Visit</a></p>
+            </div>
+        </section>
+
+        <!-- 2. 最近更新日志 -->
+        <section class="card p-6 rounded-xl">
+            <h2 class="text-xl font-semibold mb-4 text-blue-300" data-cn>📋 近期更新日志</h2>
+            <h2 class="text-xl font-semibold mb-4 text-blue-300 hidden" data-en>📋 Recent Updates</h2>
+            
+            <ul class="list-disc pl-5 space-y-2">
+                <li data-cn>新增：添加休闲游戏区（棋类、抓娃娃、章鱼烧等交互）</li>
+                <li data-en class="hidden">New: Added casual game zone (chess, claw machine, takoyaki, etc.)</li>
+
+                <li data-cn>优化：调整游戏区位置，迁移至天空隐藏区域，不破坏主空间氛围</li>
+                <li data-en class="hidden">Optimization: Adjusted game zone position, moved to sky hidden area to keep main space cozy</li>
+            </ul>
+        </section>
+
+        <!-- 3. 作者相关 -->
+        <section class="card p-6 rounded-xl">
+            <h2 class="text-xl font-semibold mb-4 text-blue-300" data-cn>👤 作者信息</h2>
+            <h2 class="text-xl font-semibold mb-4 text-blue-300 hidden" data-en>👤 Author Info</h2>
+            
+            <div data-cn>
+                <p>作者：Wnt. Snwf.（假名：真白 冬雪 / ましろ ふゆき）</p>
+                <p>人格：ISFP + INFP | 双相、焦虑、情绪敏感</p>
+                <p>所属社群：ネメシス教団、Lv.100 メンヘラ 等</p>
+                <!-- 【重要注释：将下方href替换为你的VRChat个人主页/世界链接即可】 -->
+                <p class="mt-3">VRChat主页：<a href="https://vrchat.com/home/user/usr_47c6d8f2-727a-41a6-a87c-c564d25eba4c" class="text-blue-400 underline hover:text-blue-300" target="_blank">点击访问</a></p>
+            </div>
+            <div class="hidden" data-en>
+                <p>Author: Wnt. Snwf. (Alias: Mashiro Fuyuki)</p>
+                <p>Personality: ISFP + INFP | Bipolar, Anxiety, Emotionally Sensitive</p>
+                <p>Groups: Nemesis Cult, Lv.100 Menhera, etc.</p>
+                <!-- 【Important Note: Replace href with your VRChat profile/world link】 -->
+                <p class="mt-3">VRChat Profile: <a href="https://vrchat.com/home/user/usr_47c6d8f2-727a-41a6-a87c-c564d25eba4c" class="text-blue-400 underline hover:text-blue-300" target="_blank">Click to Visit</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="mt-12 text-center text-slate-500 text-sm">
+        <p data-cn>© 2025 晚安咖啡居 | VRChat世界官方网站，仅个人创作</p>
+        <p data-en class="hidden">© 2025 Goodnight Café | Non-commercial personal creation for VRChat</p>
+    </footer>
+
+    <script>
+        // 中英切换逻辑
+        const btnCn = document.getElementById('btnCn');
+        const btnEn = document.getElementById('btnEn');
+        const cnElements = document.querySelectorAll('[data-cn]');
+        const enElements = document.querySelectorAll('[data-en]');
+
+        btnCn.addEventListener('click', () => {
+            cnElements.forEach(el => el.classList.remove('hidden'));
+            enElements.forEach(el => el.classList.add('hidden'));
+            document.documentElement.lang = 'zh-CN';
+            btnCn.classList.add('bg-blue-600');
+            btnEn.classList.remove('bg-blue-600');
+        });
+
+        btnEn.addEventListener('click', () => {
+            cnElements.forEach(el => el.classList.add('hidden'));
+            enElements.forEach(el => el.classList.remove('hidden'));
+            document.documentElement.lang = 'en';
+            btnEn.classList.add('bg-blue-600');
+            btnCn.classList.remove('bg-blue-600');
+        });
+
+    </script>
+</body>
+</html>
